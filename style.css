@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  font-family: 'Lobster', cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d00000;
+}
+
+#header {
+  height: 4.375rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e7e7e7;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#menu a:hover {
+  background: #d00000;
+  color: #fff;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+#footer {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  background: #e7e7e7;
+}
+
+#footer a {
+  color: #d00000;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  #header {
+    background: #14213d;
+  }
+
+  #header #logo {
+    color: #fca311;
+  }
+
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 4.375rem;
+    right: 0;
+    background: #e7e7e7;
+    transition: 0.7s;
+    height: 0;
+    z-index: 10000;
+    visibility: hidden;
+    overflow-y: hidden;
+    background: #14213d;
+  }
+
+  #menu a:hover {
+    background: none;
+    color: none;
+  }
+
+  #nav.active #menu {
+    height: calc(100vh - 4.375rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    color: #e5e5e5;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+    color: #e5e5e5;
+  }
+
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 1.5px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}
