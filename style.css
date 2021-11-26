@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
   margin: 0;
@@ -52,6 +53,27 @@ a:hover {
   display: none;
 }
 
+#fundo-site {
+  width: 100%;
+  height: calc(100vh - 4.375rem);
+  background: linear-gradient(to right, #0091ad, #b7094c);
+  position: relative;
+}
+
+#txt-fundo {
+  margin: 0;
+  padding: 1rem;
+  border: 2px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: #fff;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+}
+
 #footer {
   width: 100%;
   text-align: center;
@@ -84,7 +106,6 @@ a:hover {
     width: 100%;
     top: 4.375rem;
     right: 0;
-    background: #e7e7e7;
     transition: 0.7s;
     height: 0;
     z-index: 10000;
@@ -107,7 +128,7 @@ a:hover {
   #menu a {
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
     color: #e5e5e5;
   }
 
@@ -150,5 +171,15 @@ a:hover {
   #nav.active #hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
+  }
+
+  #footer {
+    font-weight: normal;
+    background: #14213d;
+    color: #fff;
+  }
+
+  #footer a {
+    color: #fca311;
   }
 }
