@@ -63,25 +63,25 @@ a:hover {
 #txt-fundo {
   margin: 0;
   padding: 1rem;
+  text-align: center;
   border: 2px solid #000;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   background: #fff;
   font-family: 'Bebas Neue', cursive;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 #footer {
   width: 100%;
   text-align: center;
-  padding: 1rem;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   position: absolute;
+  padding: 1rem;
   bottom: 0;
   background: #e7e7e7;
 }
