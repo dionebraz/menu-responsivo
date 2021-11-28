@@ -54,24 +54,22 @@ a:hover {
 }
 
 #fundo-site {
-  width: 100%;
-  height: calc(100vh - 4.375rem);
-  background: linear-gradient(to right, #0091ad, #b7094c);
+  height: calc(100vh - 4.375rem - 53.6px);
+  background: linear-gradient(to right, #001d3d, #003566 80%);
   position: relative;
+  font-family: 'Bebas Neue', cursive;
 }
 
-#txt-fundo {
-  margin: 0;
+#fundo-site p {
+  border: 3px solid;
+  background: #fff;
   padding: 1rem;
   text-align: center;
-  border: 2px solid #000;
   position: absolute;
   top: 50%;
   left: 50%;
+  margin-right: -50%;
   transform: translate(-50%, -50%);
-  background: #fff;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 1.3rem;
 }
 
 #footer {
