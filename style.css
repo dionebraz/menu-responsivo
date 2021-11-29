@@ -10,9 +10,9 @@
 }
 
 body {
+  height: 100vh;
   background-color: #000;
   background-image: url(imagens/natal-desktop.jpg);
-  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -84,6 +84,8 @@ a:hover {
   body {
     height: calc(100vh - 50px);
     background-image: url(imagens/natal-mobile.jpg);
+    background-position: center center;
+    background-size: cover;
   }
 
   #header {
