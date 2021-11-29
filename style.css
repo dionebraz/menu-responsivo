@@ -9,6 +9,16 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: url(imagens/natal-desktop.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 a {
   color: #000;
   text-decoration: none;
@@ -73,6 +83,10 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+  body {
+    background-image: url(imagens/natal-mobile.jpg);
+  }
+
   #header {
     background: #14213d;
   }
