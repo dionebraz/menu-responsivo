@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* font-family: 'Bebas Neue', cursive; */
+
 * {
   margin: 0;
   padding: 0;
@@ -51,25 +53,6 @@ a:hover {
 
 #btn-mobile {
   display: none;
-}
-
-#fundo-site {
-  height: calc(100vh - 4.375rem - 53.6px);
-  background: linear-gradient(to right, #001d3d, #003566 80%);
-  position: relative;
-  font-family: 'Bebas Neue', cursive;
-}
-
-#fundo-site p {
-  border: 3px solid;
-  background: #fff;
-  padding: 1rem;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 
 #footer {
