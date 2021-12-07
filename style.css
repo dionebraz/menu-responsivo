@@ -7,14 +7,14 @@
 }
 
 a {
-  color: #000;
+  color: #646369;
   font-weight: bold;
   text-decoration: none;
   font-family: sans-serif;
 }
 
 a:hover {
-  background: rgba(0, 0, 0, 0.05);
+  color: #020c20;
 }
 
 #logo {
@@ -30,7 +30,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
+  background-color: #e7e7e7;
 }
 
 #menu {
@@ -44,36 +44,25 @@ a:hover {
   padding: 0.5rem;
 }
 
-#menu a:hover {
-  background: rgba(0, 0, 0, 0.05);
-}
-
 #btn-mobile {
   display: none;
 }
 
 main {
   width: 100%;
-  height: 100vh;
-  background-color: #000814;
+  height: calc(100vh - 4.375rem);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#footer {
+main video {
+  position: fixed;
+  top: 4.375rem;
+  left: 0;
+  object-fit: cover;
   width: 100%;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
-  position: absolute;
-  padding: 1rem;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
-  color: #fff;
-}
-
-#footer a {
-  color: #d00000;
-  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
@@ -158,17 +147,8 @@ main {
     top: -7px;
   }
 
-  main {
-    height: calc(100vh - 4.375rem);
-  }
-
-  #footer {
-    font-weight: normal;
-    background: #14213d;
-    color: #fff;
-  }
-
-  #footer a {
-    color: #fca311;
+  main video {
+    top: 70px;
+    height: 100%;
   }
 }
