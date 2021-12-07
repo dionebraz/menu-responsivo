@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Bebas Neue', cursive;
 }
 
 a {
@@ -35,7 +30,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(231, 231, 231, 0.5);
+  background: #fff;
 }
 
 #menu {
