@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 
 * {
   margin: 0;
@@ -52,11 +53,14 @@ a:hover {
 main {
   width: 100%;
   height: calc(100vh - 4.375rem);
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+
+main span {
+  color: #0f0;
 }
 
 main video {
@@ -162,13 +166,13 @@ main video {
   }
 
   .conteudo {
-    color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
     position: absolute;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.75);
     padding: 5px;
     width: 100%;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
   }
 }
