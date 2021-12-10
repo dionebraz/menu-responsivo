@@ -51,7 +51,7 @@ body {
   position: relative;
   color: #ffd900;
   letter-spacing: 5px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   animation: typing 8s steps(16) infinite;
   overflow: hidden;
@@ -65,7 +65,7 @@ body {
   }
   30%,60%
   {
-    width: 385.64px;
+    width: 309.23px;
   }
 }
 
@@ -119,8 +119,6 @@ footer a {
 @media (max-width: 600px) {
   .first-music {
     width: 85%;
-    height: 100%;
-    position: relative;
   }
 
   .first-music h4 {
@@ -129,7 +127,7 @@ footer a {
   }
 
   .first-music .imgBox {
-    height: 275px;
+    height: 330px;
   }
 
   footer {
