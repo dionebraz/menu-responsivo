@@ -16,6 +16,59 @@ body {
   background-image: linear-gradient(to bottom, #7209b7, #f72585);
 }
 
+.loader {
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+}
+
+.loader::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #ffd900;
+  animation: blinkCursor 0.8s steps(3) infinite;
+}
+
+@keyframes blinkCursor
+{
+  0%,75%
+  {
+    opacity: 1;
+  }
+  76%,100%
+  {
+    opacity: 0;
+  }
+}
+
+.loader h2 {
+  position: relative;
+  color: #ffd900;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation: typing 8s steps(16) infinite;
+  overflow: hidden;
+}
+
+@keyframes typing
+{
+  0%,90%,100%
+  {
+    width: 0;
+  }
+  30%,60%
+  {
+    width: 385.64px;
+  }
+}
+
 .first-music {
   width: 350px;
   height: 100%;
