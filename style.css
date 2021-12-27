@@ -9,14 +9,22 @@
 }
 
 a {
-  color: #646369;
+  color: #ddcccc;
   font-weight: bold;
   text-decoration: none;
   font-family: sans-serif;
 }
 
 a:hover {
-  color: #020c20;
+  color: #fff;
+}
+
+.bgImg img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
 }
 
 #logo {
@@ -32,7 +40,9 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #e7e7e7;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: relative;
+  z-index: 999;
 }
 
 #menu {
@@ -48,34 +58,6 @@ a:hover {
 
 #btn-mobile {
   display: none;
-}
-
-main {
-  width: 100%;
-  height: calc(100vh - 4.375rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-main span {
-  color: #0f0;
-}
-
-main video {
-  position: fixed;
-  top: 4.375rem;
-  left: 0;
-  object-fit: cover;
-  width: 100%;
-}
-
-.conteudo {
-  color: #fff;
-  font-size: 3rem;
-  font-family: 'Bebas Neue', cursive;
-  z-index: 1;
 }
 
 @media (max-width: 600px) {
@@ -119,6 +101,10 @@ main video {
     color: #e5e5e5;
   }
 
+  img {
+    object-fit: cover;
+  }
+
   #btn-mobile {
     display: flex;
     padding: 0.5rem 1rem;
@@ -158,21 +144,5 @@ main video {
   #nav.active #hamburger::after {
     transform: rotate(-135deg);
     top: -7px;
-  }
-
-  main video {
-    top: 70px;
-    height: 100%;
-  }
-
-  .conteudo {
-    font-size: 1rem;
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.75);
-    padding: 5px;
-    width: 100%;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
   }
 }
