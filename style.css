@@ -19,14 +19,6 @@ a:hover {
   color: #fff;
 }
 
-.bgImg img {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-}
-
 #logo {
   font-family: 'Lobster', cursive;
   font-size: 3rem;
@@ -99,10 +91,6 @@ a:hover {
     margin: 0 1rem;
     border-bottom: 2px solid rgba(255, 255, 255, 0.05);
     color: #e5e5e5;
-  }
-
-  img {
-    object-fit: cover;
   }
 
   #btn-mobile {
